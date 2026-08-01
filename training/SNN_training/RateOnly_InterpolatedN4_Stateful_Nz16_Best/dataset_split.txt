@@ -1,0 +1,164 @@
+TRAIN (131 cases)
+==================================================
+  AoA20_base_G_0.0
+  AoA20_RD1_G_1.6
+  AoA20_RD2_G_n0.4
+  AoA20_RD3_G_1.8
+  AoA20_RD4_G_3.8
+  AoA20_RD6_G_1.6
+  AoA20_RD7_G_1.4
+  AoA20_RD9_G_3.6
+  AoA20_RD10_G_1.8
+  AoA20_RD11_G_3.8
+  AoA20_RD12_G_2.8
+  AoA20_RD13_G_2.6
+  AoA20_RD14_G_n2.2
+  AoA20_RD15_G_1.0
+  AoA20_RD16_G_n0.6
+  AoA20_RD18_G_0.4
+  AoA20_RD19_G_n1.0
+  AoA20_RD20_G_n1.8
+  AoA20_RD21_G_n1.8
+  AoA20_RD22_G_0.8
+  AoA20_RD23_G_n1.2
+  AoA20_RD24_G_1.2
+  AoA20_RD25_G_n3.2
+  AoA20_RD26_G_0.6
+  AoA20_RD27_G_n2.6
+  AoA20_RD28_G_1.4
+  AoA20_RD30_G_n1.4
+  AoA30_base_G_0.0
+  AoA30_RD1_G_n4.0
+  AoA30_RD3_G_3.4
+  AoA30_RD5_G_1.6
+  AoA30_RD6_G_3.0
+  AoA30_RD7_G_n0.6
+  AoA30_RD8_G_2.8
+  AoA30_RD9_G_3.6
+  AoA30_RD10_G_n2.2
+  AoA30_RD12_G_2.8
+  AoA30_RD14_G_n2.4
+  AoA30_RD15_G_n2.2
+  AoA30_RD16_G_3.8
+  AoA30_RD17_G_n2.8
+  AoA30_RD18_G_n1.6
+  AoA30_RD19_G_n1.8
+  AoA30_RD20_G_n0.6
+  AoA30_RD21_G_n2.6
+  AoA30_RD23_G_3.4
+  AoA30_RD24_G_2.2
+  AoA30_RD25_G_n1.4
+  AoA30_RD26_G_n3.6
+  AoA30_RD27_G_3.6
+  AoA30_RD28_G_2.0
+  AoA30_RD29_G_n1.6
+  AoA30_RD30_G_3.4
+  AoA40_base_G_0.0
+  AoA40_RD2_G_n3.8
+  AoA40_RD3_G_3.0
+  AoA40_RD4_G_n1.0
+  AoA40_RD5_G_1.8
+  AoA40_RD7_G_2.0
+  AoA40_RD8_G_1.4
+  AoA40_RD9_G_2.6
+  AoA40_RD10_G_1.0
+  AoA40_RD11_G_1.2
+  AoA40_RD13_G_n1.8
+  AoA40_RD14_G_n1.4
+  AoA40_RD15_G_1.8
+  AoA40_RD17_G_2.4
+  AoA40_RD18_G_3.6
+  AoA40_RD20_G_n1.8
+  AoA40_RD21_G_1.0
+  AoA40_RD22_G_n1.4
+  AoA40_RD23_G_1.2
+  AoA40_RD24_G_1.4
+  AoA40_RD25_G_1.6
+  AoA40_RD26_G_2.8
+  AoA40_RD27_G_n3.2
+  AoA40_RD28_G_1.8
+  AoA40_RD29_G_n3.4
+  AoA40_RD30_G_2.6
+  AoA50_base_G_0.0
+  AoA50_RD1_G_2.8
+  AoA50_RD2_G_n3.0
+  AoA50_RD3_G_n3.8
+  AoA50_RD5_G_n4.0
+  AoA50_RD6_G_n1.0
+  AoA50_RD9_G_2.0
+  AoA50_RD10_G_n3.8
+  AoA50_RD11_G_2.0
+  AoA50_RD12_G_n1.4
+  AoA50_RD13_G_n2.0
+  AoA50_RD14_G_3.2
+  AoA50_RD15_G_n3.4
+  AoA50_RD16_G_n2.6
+  AoA50_RD17_G_n0.8
+  AoA50_RD19_G_n2.6
+  AoA50_RD20_G_n0.6
+  AoA50_RD22_G_0.4
+  AoA50_RD23_G_n0.6
+  AoA50_RD24_G_n1.2
+  AoA50_RD25_G_1.6
+  AoA50_RD26_G_n1.2
+  AoA50_RD27_G_3.4
+  AoA50_RD28_G_n1.6
+  AoA50_RD29_G_2.8
+  AoA50_RD30_G_2.6
+  AoA60_base_G_0.0
+  AoA60_RD1_G_n1.6
+  AoA60_RD2_G_n0.8
+  AoA60_RD3_G_n1.0
+  AoA60_RD4_G_1.4
+  AoA60_RD5_G_n2.8
+  AoA60_RD7_G_1.2
+  AoA60_RD8_G_n0.8
+  AoA60_RD11_G_n0.4
+  AoA60_RD12_G_1.0
+  AoA60_RD13_G_1.6
+  AoA60_RD14_G_3.6
+  AoA60_RD15_G_3.8
+  AoA60_RD16_G_n0.8
+  AoA60_RD17_G_2.2
+  AoA60_RD18_G_3.4
+  AoA60_RD19_G_2.6
+  AoA60_RD20_G_3.4
+  AoA60_RD21_G_1.4
+  AoA60_RD22_G_3.6
+  AoA60_RD23_G_2.6
+  AoA60_RD25_G_0.8
+  AoA60_RD27_G_1.4
+  AoA60_RD28_G_1.4
+  AoA60_RD29_G_n3.6
+  AoA60_RD30_G_3.2
+
+VAL (0 cases)
+==================================================
+
+TEST (24 cases)
+==================================================
+  [forced] AoA20_RD5_G_n2.2
+  [forced] AoA20_RD8_G_0.8
+  [forced] AoA20_RD17_G_2.8
+  [forced] AoA20_RD29_G_1.2
+  [forced] AoA30_RD2_G_3.4
+  [forced] AoA30_RD4_G_n1.2
+  [forced] AoA30_RD11_G_1.2
+  [forced] AoA30_RD13_G_n3.6
+  [forced] AoA30_RD22_G_n0.4
+  [forced] AoA40_RD1_G_n2.2
+  [forced] AoA40_RD6_G_1.8
+  [forced] AoA40_RD12_G_n2.0
+  [forced] AoA40_RD16_G_4.0
+  [forced] AoA40_RD19_G_0.8
+  [forced] AoA50_RD4_G_n3.0
+  [forced] AoA50_RD7_G_0.4
+  [forced] AoA50_RD8_G_n2.0
+  [forced] AoA50_RD18_G_2.2
+  [forced] AoA50_RD21_G_n4.0
+  [forced] AoA60_RD6_G_n3.0
+  [forced] AoA60_RD9_G_n3.0
+  [forced] AoA60_RD10_G_n0.4
+  [forced] AoA60_RD24_G_n1.8
+  [forced] AoA60_RD26_G_2.0
+

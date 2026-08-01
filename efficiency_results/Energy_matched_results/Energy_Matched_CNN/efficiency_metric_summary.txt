@@ -1,0 +1,55 @@
+======================================================================
+EFFICIENCY METRICS SUMMARY
+======================================================================
+Model folder      : CNN_EnergyMatched_Nz16_seed0_July_22_2026_14h_41m
+Weights file      : epoch_100.pth
+Model family      : CNN (non-spiking)
+Model version     : cnn_energy_matched
+Encoding          : none  (in_channels=1)
+Latent dim N_z    : 16
+Dataset           : interpolated (N=4)
+Test encounters   : 24
+Total time steps  : 142,704  (sum of T_i over encounters)
+Device            : cuda
+Generated         : 2026-07-22 17:21:44
+----------------------------------------------------------------------
+These are analytical estimates of the arithmetic workload and its
+energy/memory footprint on the test set. Firing densities are measured
+empirically; MAC/AC counts follow the thesis formulas; the energy is a
+32-bit-op approximation (Horowitz 45 nm), not a hardware measurement.
+
+1. NUMBER OF PARAMETERS
+----------------------------------------------------------------------
+   Total parameters  N_theta : 5,765 (5.765 k)
+   Trainable                 : 5,765
+
+2. SPIKE ACTIVITY  (firing density rho_l = spikes / possible activations)
+----------------------------------------------------------------------
+   (non-spiking model — no spike activity)
+
+3. ARITHMETIC OPERATIONS  (MAC = continuous, AC = spike-driven)
+----------------------------------------------------------------------
+   Layer          type    op    rho_pre   dense MAC/step   ops (test-set)
+   b1_conv1       conv    MAC       -            1.037 M        147.956 G
+   b1_conv2       conv    MAC       -            4.147 M        591.822 G
+   b2_conv1       conv    MAC       -          259.200 k         36.989 G
+   b2_conv2       conv    MAC       -          259.200 k         36.989 G
+   z_proj         linear  MAC       -            4.608 k        657.580 M
+   cl_readout     linear  MAC       -                 16          2.283 M
+   ----------------------------------------------------------------
+   Total MAC : test-set 814.415 G  |  per encounter 33.934 G  |  per step 5.707 M
+   Total AC  : test-set 0  |  per encounter 0  |  per step 0
+   Dense-equiv MAC (all layers dense) : per encounter 33.934 G
+
+4. ESTIMATED INFERENCE ENERGY  (eps_MAC = 4.6 pJ, eps_AC = 0.9 pJ)
+----------------------------------------------------------------------
+   E_hat per encounter (mean) : 156.0962 mJ
+   E_hat per time step        : 26.2523 uJ
+   E_hat total (test set)     : 3.7463 J
+
+5. MEMORY
+----------------------------------------------------------------------
+   Weight memory  M_weights          : 22.520 KB  (5,765 params x 32-bit)
+   Persistent memory M_persistent    : 22.520 KB
+
+======================================================================

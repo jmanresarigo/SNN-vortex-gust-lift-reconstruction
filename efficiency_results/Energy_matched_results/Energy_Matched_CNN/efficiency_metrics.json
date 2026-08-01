@@ -1,0 +1,20 @@
+{
+  "model_folder": "CNN_EnergyMatched_Nz16_seed0_July_22_2026_14h_41m",
+  "model_version": "cnn_energy_matched",
+  "family": "cnn",
+  "n_params": 5765,
+  "n_encounters": 24,
+  "t_total_steps": 142704,
+  "energy_total_pj": 3746309703321.5996,
+  "energy_per_encounter_pj": 156096237638.4,
+  "energy_per_step_pj": 26252310.4,
+  "total_mac": 814415152896.0,
+  "total_ac": 0.0,
+  "ops_total": 814415152896.0,
+  "ops_per_encounter": 33933964704.0,
+  "ops_per_step": 5707024.0,
+  "mac_per_encounter": 33933964704.0,
+  "ac_per_encounter": 0.0,
+  "mac_per_step": 5707024.0,
+  "ac_per_step": 0.0
+}

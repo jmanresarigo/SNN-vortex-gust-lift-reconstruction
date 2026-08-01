@@ -1,0 +1,72 @@
+CONFIGURATION SNAPSHOT
+==================================================
+TRAINING_DESCRIPTION    = GustEncoder v11 Rate_Encoding_Only Nz=16 T100 P99 gamma=0.6 gain=1.0 MSE-only random-case-split Dataset_InterpolatedN4 selected_test_cases (No val set) Random-Window Training
+
+ENCODING
+------------------------------
+ENCODING                = rate
+ENCODING_PRESET         = rate_robust
+BINS                    = 1
+NORM_PERCENTILE         = 99
+GAMMA                   = 0.6
+GAIN                    = 1.0
+
+DATASET
+------------------------------
+DATASET                 = Dataset_interpolated_cubic_spline_N4
+TIME_STEPS_UNITS        = interpolated
+PHYSICAL_DURATION_PER_WINDOW = 20.0000  (in original-grid units)
+
+DATA
+------------------------------
+TRAINING_MODE           = random_window
+TIME_STEPS              = 100
+WARMUP_STEPS            = 0
+STRIDE                  = 100
+ANGLES                  = [20, 30, 40, 50, 60]
+
+SPLIT
+------------------------------
+SPLIT_MODE              = random_case
+VAL_RATIO               = 0.0
+TEST_RATIO              = 0.15
+TRAIN_CASES             = []
+VAL_CASES               = []
+TEST_CASES              = ['AoA20_RD5_G_n2.2', 'AoA20_RD8_G_0.8', 'AoA20_RD17_G_2.8', 'AoA20_RD29_G_1.2', 'AoA30_RD2_G_3.4', 'AoA30_RD4_G_n1.2', 'AoA30_RD11_G_1.2', 'AoA30_RD13_G_n3.6', 'AoA30_RD22_G_n0.4', 'AoA40_RD1_G_n2.2', 'AoA40_RD6_G_1.8', 'AoA40_RD12_G_n2.0', 'AoA40_RD16_G_4.0', 'AoA40_RD19_G_0.8', 'AoA50_RD4_G_n3.0', 'AoA50_RD7_G_0.4', 'AoA50_RD8_G_n2.0', 'AoA50_RD18_G_2.2', 'AoA50_RD21_G_n4.0', 'AoA60_RD6_G_n3.0', 'AoA60_RD9_G_n3.0', 'AoA60_RD10_G_n0.4', 'AoA60_RD24_G_n1.8', 'AoA60_RD26_G_2.0']
+
+ARCHITECTURE
+------------------------------
+MODEL_VERSION           = v11
+N_Z                     = 16
+IN_CHANNELS             = 2
+BETA_INIT               = 0.9
+FC_THRESHOLD            = 0.5
+
+TRAINING
+------------------------------
+BPTT_CHUNK              = None
+BATCH_SIZE              = 10
+EPOCHS                  = 100
+NO_VAL_MODE             = True
+SAVE_EVERY_N_EPOCHS     = 10
+EARLY_STOP              = False
+EARLY_STOP_EPOCHS       = 15
+LR                      = 0.0001
+WEIGHT_DECAY            = 0.0001
+GRAD_CLIP               = 1.0
+USE_AMP                 = True
+AMP_DTYPE               = bfloat16
+NUM_WORKERS             = 4
+PREFETCH_FACTOR         = 2
+PERSISTENT_WORKERS      = True
+STATEFUL_PREFETCH_WORKERS = 4
+STATEFUL_PREFETCH_FACTOR  = 2
+RELEASE_CUDA_CACHE_EVERY_EPOCH = False
+
+LOSS
+------------------------------
+LOSS_TYPE               = lift
+W_LIFT                  = 1.0
+DERIVATIVE_TIME_SCALING = True
+DERIVATIVE_DT_FACTOR    = 5
+==================================================

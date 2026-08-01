@@ -1,0 +1,247 @@
+========================================================================
+CASE SUMMARY — ENCOUNTER-LEVEL Cl METRICS
+========================================================================
+
+AVERAGES (encounter-level)
+----------------------------------------
+  MSE                                 : 0.171925
+  RMSE                                : 0.253570
+  MAE                                 : 0.165244
+  Relative L2 Error                   : 0.126695
+  Cosine Similarity                   : 0.991824
+  Peak Cl Error                       : 0.384745
+  Peak Timing Error (ts)              : 56.791667
+  Integrated Abs Error                : 977.448421
+  Normalized Integrated Abs Error     : 0.096450
+
+MEDIANS (encounter-level)
+----------------------------------------
+  MSE                                 : 0.013037
+  RMSE                                : 0.114105
+  MAE                                 : 0.071411
+  Relative L2 Error                   : 0.099047
+  Cosine Similarity                   : 0.996351
+  Peak Cl Error                       : 0.164943
+  Peak Timing Error (ts)              : 50.500000
+  Integrated Abs Error                : 422.400759
+  Normalized Integrated Abs Error     : 0.066397
+
+HIGHLIGHTS
+----------------------------------------
+  MSE
+    Best : AoA40_RD1_G_n2.2                  0.003172
+    Worst: AoA30_RD13_G_n3.6                 2.071060
+  RMSE
+    Best : AoA40_RD1_G_n2.2                  0.056321
+    Worst: AoA30_RD13_G_n3.6                 1.439118
+  MAE
+    Best : AoA30_RD11_G_1.2                  0.034100
+    Worst: AoA30_RD13_G_n3.6                 0.846373
+  Relative L2 Error
+    Best : AoA50_RD7_G_0.4                   0.051901
+    Worst: AoA30_RD13_G_n3.6                 0.395141
+  Cosine Similarity
+    Best : AoA50_RD7_G_0.4                   0.998832
+    Worst: AoA30_RD13_G_n3.6                 0.957367
+  Peak Cl Error
+    Best : AoA60_RD24_G_n1.8                 0.018313
+    Worst: AoA30_RD13_G_n3.6                 1.813883
+  Peak Timing Error (ts)
+    Best : AoA20_RD17_G_2.8                  2.000000
+    Worst: AoA50_RD21_G_n4.0                 253.000000
+  Integrated Abs Error
+    Best : AoA30_RD11_G_1.2                  201.700094
+    Worst: AoA30_RD13_G_n3.6                 5006.928307
+  Normalized Integrated Abs Error
+    Best : AoA40_RD1_G_n2.2                  0.037241
+    Worst: AoA30_RD13_G_n3.6                 0.322410
+
+PER-CASE TABLE  (sorted by |G| descending)
+----------------------------------------------------------------------------------------------------------------------------------------
+Case                             AoA       G      T        MSE       RMSE        MAE      RelL2   CosSim      PkErr   PkTim   NormIntAbs
+----------------------------------------------------------------------------------------------------------------------------------------
+AoA40_RD16_G_4.0                  40   +4.00   5916    0.93959    0.96932    0.80701    0.24011   0.9798    1.53987      88      0.30820
+AoA50_RD21_G_n4.0                 50   -4.00   5916    0.01400    0.11834    0.07069    0.11467   0.9945    0.15831     253      0.06926
+AoA30_RD13_G_n3.6                 30   -3.60   5916    2.07106    1.43912    0.84637    0.39514   0.9574    1.81388       4      0.32241
+AoA30_RD2_G_3.4                   30   +3.40   5916    0.08958    0.29931    0.14740    0.26304   0.9686    1.20124      10      0.14556
+AoA50_RD4_G_n3.0                  50   -3.00   5916    0.10111    0.31798    0.19563    0.09768   0.9966    0.46232      62      0.08286
+AoA60_RD6_G_n3.0                  60   -3.00   5916    0.00695    0.08337    0.05429    0.09125   0.9968    0.11707      23      0.06023
+AoA60_RD9_G_n3.0                  60   -3.00   5916    0.50263    0.70896    0.51885    0.34839   0.9718    1.39639      48      0.28776
+AoA20_RD17_G_2.8                  20   +2.80   5916    0.04044    0.20109    0.10173    0.10645   0.9955    0.17157       2      0.06884
+AoA20_RD5_G_n2.2                  20   -2.20   5916    0.15363    0.39195    0.22901    0.13476   0.9912    0.40068      92      0.10255
+AoA40_RD1_G_n2.2                  40   -2.20   5916    0.00317    0.05632    0.03614    0.05658   0.9984    0.17228       8      0.03724
+AoA50_RD18_G_2.2                  50   +2.20   5916    0.01919    0.13854    0.08757    0.08627   0.9967    0.14755      58      0.06450
+AoA40_RD12_G_n2.0                 40   -2.00   5916    0.07936    0.28170    0.18666    0.10181   0.9950    0.03230      16      0.08413
+AoA50_RD8_G_n2.0                  50   -2.00   5916    0.02192    0.14805    0.07991    0.11716   0.9933    0.17483      16      0.06862
+AoA60_RD26_G_2.0                  60   +2.00   5916    0.01111    0.10541    0.07213    0.09193   0.9968    0.33068      81      0.06594
+AoA40_RD6_G_1.8                   40   +1.80   5916    0.01398    0.11823    0.07597    0.07947   0.9982    0.25032       8      0.06146
+AoA60_RD24_G_n1.8                 60   -1.80   5916    0.00510    0.07145    0.04696    0.07215   0.9979    0.01831      22      0.04873
+AoA20_RD29_G_1.2                  20   +1.20   5916    0.00909    0.09532    0.06083    0.06536   0.9979    0.18858      61      0.05197
+AoA30_RD11_G_1.2                  30   +1.20   5916    0.00342    0.05851    0.03410    0.06398   0.9982    0.07318       6      0.03891
+AoA30_RD4_G_n1.2                  30   -1.20   5916    0.00736    0.08578    0.05387    0.10222   0.9961    0.14103     123      0.06686
+AoA20_RD8_G_0.8                   20   +0.80   5916    0.00363    0.06029    0.03928    0.07731   0.9970    0.15480       6      0.05072
+AoA40_RD19_G_0.8                  40   +0.80   5916    0.01210    0.10998    0.06867    0.10042   0.9950    0.11755      73      0.06548
+AoA30_RD22_G_n0.4                 30   -0.40   5916    0.00899    0.09483    0.06029    0.11422   0.9941    0.05183      53      0.07555
+AoA50_RD7_G_0.4                   50   +0.40   5916    0.00348    0.05899    0.04330    0.05190   0.9988    0.03425      91      0.03934
+AoA60_RD10_G_n0.4                 60   -0.40   5916    0.00531    0.07286    0.04918    0.06842   0.9982    0.08505     159      0.04771
+----------------------------------------------------------------------------------------------------------------------------------------
+
+GUST BUCKET BREAKDOWN
+----------------------------------------
+  Mild   (|G|<=1.0)  (n=5)
+    MSE                                 : mean=0.006702  median=0.005308
+    RMSE                                : mean=0.079389  median=0.072859
+    MAE                                 : mean=0.052143  median=0.049179
+    Relative L2 Error                   : mean=0.082454  median=0.077306
+    Cosine Similarity                   : mean=0.996624  median=0.997028
+    Peak Cl Error                       : mean=0.088696  median=0.085050
+    Peak Timing Error (ts)              : mean=76.400000  median=73.000000
+    Integrated Abs Error                : mean=308.386458  median=290.839285
+    Normalized Integrated Abs Error     : mean=0.055759  median=0.050717
+
+  Medium (1<|G|<=2.5)  (n=11)
+    MSE                                 : mean=0.029757  median=0.011111
+    RMSE                                : mean=0.141023  median=0.105407
+    MAE                                 : mean=0.087560  median=0.072133
+    Relative L2 Error                   : mean=0.088336  median=0.086273
+    Cosine Similarity                   : mean=0.996329  median=0.996817
+    Peak Cl Error                       : mean=0.175431  median=0.172284
+    Peak Timing Error (ts)              : mean=44.636364  median=22.000000
+    Integrated Abs Error                : mean=517.945072  median=426.672315
+    Normalized Integrated Abs Error     : mean=0.062808  median=0.064498
+
+  Strong (|G|>2.5)  (n=8)
+    MSE                                 : mean=0.470670  median=0.095346
+    RMSE                                : mean=0.517186  median=0.308641
+    MAE                                 : mean=0.342746  median=0.171516
+    Relative L2 Error                   : mean=0.207090  median=0.177391
+    Cosine Similarity                   : mean=0.982629  median=0.987154
+    Peak Cl Error                       : mean=0.857582  median=0.831780
+    Peak Timing Error (ts)              : mean=61.250000  median=35.500000
+    Integrated Abs Error                : mean=2027.429254  median=1014.624290
+    Normalized Integrated Abs Error     : mean=0.168139  median=0.114207
+
+========================================================================
+ORIGINAL GRID — ENCOUNTER-LEVEL Cl METRICS  (pred[::step] vs original CSV)
+  T ≈ 1184  (downsampled from interpolated grid)
+========================================================================
+
+AVERAGES (original grid)
+----------------------------------------
+  MSE                                 : 0.171877
+  RMSE                                : 0.253559
+  MAE                                 : 0.165236
+  Relative L2 Error                   : 0.126706
+  Cosine Similarity                   : 0.991825
+  Peak Cl Error                       : 0.384990
+  Peak Timing Error (ts)              : 11.166667
+  Integrated Abs Error                : 195.507149
+  Normalized Integrated Abs Error     : 0.096459
+
+MEDIANS (original grid)
+----------------------------------------
+  MSE                                 : 0.013060
+  RMSE                                : 0.114210
+  MAE                                 : 0.071405
+  Relative L2 Error                   : 0.099165
+  Cosine Similarity                   : 0.996350
+  Peak Cl Error                       : 0.165106
+  Peak Timing Error (ts)              : 10.000000
+  Integrated Abs Error                : 84.474775
+  Normalized Integrated Abs Error     : 0.066392
+
+HIGHLIGHTS (original grid)
+----------------------------------------
+  MSE
+    Best : AoA40_RD1_G_n2.2                  0.003167
+    Worst: AoA30_RD13_G_n3.6                 2.069566
+  RMSE
+    Best : AoA40_RD1_G_n2.2                  0.056277
+    Worst: AoA30_RD13_G_n3.6                 1.438599
+  MAE
+    Best : AoA30_RD11_G_1.2                  0.034093
+    Worst: AoA30_RD13_G_n3.6                 0.845949
+  Relative L2 Error
+    Best : AoA50_RD7_G_0.4                   0.051914
+    Worst: AoA30_RD13_G_n3.6                 0.395124
+  Cosine Similarity
+    Best : AoA50_RD7_G_0.4                   0.998831
+    Worst: AoA30_RD13_G_n3.6                 0.957357
+  Peak Cl Error
+    Best : AoA60_RD24_G_n1.8                 0.016897
+    Worst: AoA30_RD13_G_n3.6                 1.823740
+  Peak Timing Error (ts)
+    Best : AoA40_RD1_G_n2.2                  0.000000
+    Worst: AoA50_RD21_G_n4.0                 51.000000
+  Integrated Abs Error
+    Best : AoA30_RD11_G_1.2                  40.328894
+    Worst: AoA30_RD13_G_n3.6                 1001.390987
+  Normalized Integrated Abs Error
+    Best : AoA40_RD1_G_n2.2                  0.037237
+    Worst: AoA30_RD13_G_n3.6                 0.322410
+
+PER-CASE TABLE (original grid, sorted by |G| descending)
+----------------------------------------------------------------------------------------------------------------------------------------
+Case                             AoA       G      T        MSE       RMSE        MAE      RelL2   CosSim      PkErr   PkTim   NormIntAbs
+----------------------------------------------------------------------------------------------------------------------------------------
+AoA40_RD16_G_4.0                  40   +4.00   1184    0.94009    0.96958    0.80727    0.24006   0.9799    1.54332      16      0.30818
+AoA50_RD21_G_n4.0                 50   -4.00   1184    0.01400    0.11832    0.07068    0.11464   0.9945    0.15636      51      0.06925
+AoA30_RD13_G_n3.6                 30   -3.60   1184    2.06957    1.43860    0.84595    0.39512   0.9574    1.82374       1      0.32241
+AoA30_RD2_G_3.4                   30   +3.40   1184    0.08948    0.29914    0.14730    0.26293   0.9686    1.20197       2      0.14554
+AoA50_RD4_G_n3.0                  50   -3.00   1184    0.10118    0.31808    0.19572    0.09774   0.9966    0.45711      12      0.08292
+AoA60_RD6_G_n3.0                  60   -3.00   1184    0.00695    0.08334    0.05427    0.09122   0.9968    0.11338       5      0.06023
+AoA60_RD9_G_n3.0                  60   -3.00   1184    0.50253    0.70889    0.51882    0.34842   0.9718    1.39384       9      0.28783
+AoA20_RD17_G_2.8                  20   +2.80   1184    0.04042    0.20106    0.10180    0.10647   0.9955    0.17513       1      0.06891
+AoA20_RD5_G_n2.2                  20   -2.20   1184    0.15354    0.39184    0.22887    0.13477   0.9912    0.39859      19      0.10253
+AoA40_RD1_G_n2.2                  40   -2.20   1184    0.00317    0.05628    0.03612    0.05654   0.9984    0.17385       0      0.03724
+AoA50_RD18_G_2.2                  50   +2.20   1184    0.01920    0.13857    0.08758    0.08631   0.9967    0.14854      11      0.06450
+AoA40_RD12_G_n2.0                 40   -2.00   1184    0.07936    0.28172    0.18660    0.10183   0.9950    0.03231       3      0.08412
+AoA50_RD8_G_n2.0                  50   -2.00   1184    0.02192    0.14807    0.07994    0.11719   0.9933    0.17485       3      0.06861
+AoA60_RD26_G_2.0                  60   +2.00   1184    0.01111    0.10538    0.07213    0.09193   0.9968    0.33066      16      0.06594
+AoA40_RD6_G_1.8                   40   +1.80   1184    0.01399    0.11826    0.07599    0.07951   0.9982    0.24809       1      0.06148
+AoA60_RD24_G_n1.8                 60   -1.80   1184    0.00510    0.07142    0.04694    0.07213   0.9979    0.01690       4      0.04874
+AoA20_RD29_G_1.2                  20   +1.20   1184    0.00910    0.09540    0.06087    0.06542   0.9979    0.18804      11      0.05202
+AoA30_RD11_G_1.2                  30   +1.20   1184    0.00342    0.05850    0.03409    0.06398   0.9982    0.07348       1      0.03890
+AoA30_RD4_G_n1.2                  30   -1.20   1184    0.00735    0.08573    0.05383    0.10217   0.9961    0.14141      25      0.06685
+AoA20_RD8_G_0.8                   20   +0.80   1184    0.00364    0.06031    0.03928    0.07733   0.9970    0.15480       1      0.05071
+AoA40_RD19_G_0.8                  40   +0.80   1184    0.01213    0.11016    0.06876    0.10059   0.9950    0.11931      15      0.06550
+AoA30_RD22_G_n0.4                 30   -0.40   1184    0.00900    0.09484    0.06033    0.11424   0.9941    0.05212      11      0.07556
+AoA50_RD7_G_0.4                   50   +0.40   1184    0.00348    0.05901    0.04330    0.05191   0.9988    0.03545      18      0.03935
+AoA60_RD10_G_n0.4                 60   -0.40   1184    0.00532    0.07293    0.04921    0.06850   0.9982    0.08651      32      0.04771
+----------------------------------------------------------------------------------------------------------------------------------------
+
+GUST BUCKET BREAKDOWN (original grid)
+----------------------------------------
+  Mild   (|G|<=1.0)  (n=5)
+    MSE                                 : mean=0.006713  median=0.005318
+    RMSE                                : mean=0.079448  median=0.072925
+    MAE                                 : mean=0.052176  median=0.049212
+    Relative L2 Error                   : mean=0.082515  median=0.077332
+    Cosine Similarity                   : mean=0.996619  median=0.997026
+    Peak Cl Error                       : mean=0.089640  median=0.086510
+    Peak Timing Error (ts)              : mean=15.400000  median=15.000000
+    Integrated Abs Error                : mean=61.687252  median=58.165075
+    Normalized Integrated Abs Error     : mean=0.055767  median=0.050714
+
+  Medium (1<|G|<=2.5)  (n=11)
+    MSE                                 : mean=0.029751  median=0.011105
+    RMSE                                : mean=0.141015  median=0.105381
+    MAE                                 : mean=0.087543  median=0.072131
+    Relative L2 Error                   : mean=0.088342  median=0.086308
+    Cosine Similarity                   : mean=0.996328  median=0.996817
+    Peak Cl Error                       : mean=0.175156  median=0.173854
+    Peak Timing Error (ts)              : mean=8.545455  median=4.000000
+    Integrated Abs Error                : mean=103.590204  median=85.335417
+    Normalized Integrated Abs Error     : mean=0.062810  median=0.064496
+
+  Strong (|G|>2.5)  (n=8)
+    MSE                                 : mean=0.470527  median=0.095331
+    RMSE                                : mean=0.517127  median=0.308611
+    MAE                                 : mean=0.342726  median=0.171509
+    Relative L2 Error                   : mean=0.207076  median=0.177354
+    Cosine Similarity                   : mean=0.982636  median=0.987170
+    Peak Cl Error                       : mean=0.858107  median=0.829542
+    Peak Timing Error (ts)              : mean=12.125000  median=7.000000
+    Integrated Abs Error                : mean=405.530385  median=203.001172
+    Normalized Integrated Abs Error     : mean=0.168159  median=0.114229
+

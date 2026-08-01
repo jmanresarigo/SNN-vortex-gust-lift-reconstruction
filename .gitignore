@@ -1,0 +1,39 @@
+# ---------------------------------------------------------------------------
+# Virtual environment (huge — never commit)
+# ---------------------------------------------------------------------------
+TFM_TESTING_venv/
+venv/
+.venv/
+env/
+
+# ---------------------------------------------------------------------------
+# Local tooling / editor / OS junk
+# ---------------------------------------------------------------------------
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Python caches
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# Datasets — NOT redistributed (see README "Dataset availability").
+# The two dataset folders ship as empty placeholders (kept by .gitkeep);
+# ignore any actual data files a user downloads/generates into them.
+# ---------------------------------------------------------------------------
+datasets/Dataset_original/**
+datasets/Dataset_interpolated_*/**
+!datasets/Dataset_original/
+!datasets/Dataset_interpolated_*/
+!datasets/**/.gitkeep
+
+# Large, unused supplementary spreadsheet (33 MB, not read by any script).
+# Remove this line if you deliberately want to publish it.
+datasets/Source_Data.xlsx

@@ -1,0 +1,87 @@
+TEST CONFIGURATION SNAPSHOT
+Generated: 2026-07-25 17:12:17
+==================================================
+TRAINING_DESCRIPTION = GustEncoder v11 Rate_Encoding_Only Nz=32 T100 P99 gamma=0.6 gain=1.0 MSE-only random-case-split Dataset_interpolated_cubic_spline_N4 selected_test_cases (No val set) Stateful Training
+
+DATASET
+------------------------------
+DATASET_TYPE         = interpolated
+INTERP_METHOD        = cubic_spline
+N_INTERPOLATED       = 4
+INTERP_ROOT          = c:\Users\Jaume\Documents\UC3M\TFM\Datasets\Dataset_interpolated_cubic_spline_N4
+REPORT_AT_ORIGINAL_GRID = True
+
+ENCODING
+------------------------------
+ENCODING             = rate
+ENCODING_PRESET      = rate_robust
+BINS                 = 1
+GAMMA                = 0.6
+GAIN                 = 1.0
+
+DATA
+------------------------------
+TIME_STEPS           = 100
+WARMUP_STEPS         = 0
+STRIDE               = 100
+ANGLES               = [20, 30, 40, 50, 60]
+VAL_RATIO            = 0.0
+TEST_RATIO           = 0.15
+
+WARMUP PASS
+------------------------------
+USE_WARMUP_PASS      = False
+WARMUP_INTERP_POINTS = 500
+TRAIN_CASES          = []
+VAL_CASES            = []
+TEST_CASES           = ['AoA20_RD5_G_n2.2', 'AoA20_RD8_G_0.8', 'AoA20_RD17_G_2.8', 'AoA20_RD29_G_1.2', 'AoA30_RD2_G_3.4', 'AoA30_RD4_G_n1.2', 'AoA30_RD11_G_1.2', 'AoA30_RD13_G_n3.6', 'AoA30_RD22_G_n0.4', 'AoA40_RD1_G_n2.2', 'AoA40_RD6_G_1.8', 'AoA40_RD12_G_n2.0', 'AoA40_RD16_G_4.0', 'AoA40_RD19_G_0.8', 'AoA50_RD4_G_n3.0', 'AoA50_RD7_G_0.4', 'AoA50_RD8_G_n2.0', 'AoA50_RD18_G_2.2', 'AoA50_RD21_G_n4.0', 'AoA60_RD6_G_n3.0', 'AoA60_RD9_G_n3.0', 'AoA60_RD10_G_n0.4', 'AoA60_RD24_G_n1.8', 'AoA60_RD26_G_2.0']
+
+ARCHITECTURE
+------------------------------
+MODEL_VERSION        = v11
+N_Z                  = 32
+IN_CHANNELS          = 2
+BETA_INIT            = 0.9
+FC_THRESHOLD         = 0.5
+
+LOSS
+------------------------------
+LOSS_TYPE            = lift
+W_LIFT               = 1.0
+
+CHECKPOINT
+MODEL_WEIGHTS        = c:\Users\Jaume\Documents\UC3M\TFM\phase_1\checkpoints\GustAE_v11_Nz32_July_24_2026_12h_11m
+BEST_MODEL_PATH      = c:\Users\Jaume\Documents\UC3M\TFM\phase_1\checkpoints\GustAE_v11_Nz32_July_24_2026_12h_11m\epoch_100.pth
+SOURCE_SNAPSHOT      = c:\Users\Jaume\Documents\UC3M\TFM\phase_1\checkpoints\GustAE_v11_Nz32_July_24_2026_12h_11m\config_snapshot.txt
+MAX_ANIM_SAMPLES     = 10
+==================================================
+
+TEST SET CASES
+==================================================
+  AoA20_RD17_G_2.8                (AoA=20, RD17, G=2.80)
+  AoA20_RD29_G_1.2                (AoA=20, RD29, G=1.20)
+  AoA20_RD5_G_n2.2                (AoA=20, RD5, G=-2.20)
+  AoA20_RD8_G_0.8                 (AoA=20, RD8, G=0.80)
+  AoA30_RD11_G_1.2                (AoA=30, RD11, G=1.20)
+  AoA30_RD13_G_n3.6               (AoA=30, RD13, G=-3.60)
+  AoA30_RD2_G_3.4                 (AoA=30, RD2, G=3.40)
+  AoA30_RD22_G_n0.4               (AoA=30, RD22, G=-0.40)
+  AoA30_RD4_G_n1.2                (AoA=30, RD4, G=-1.20)
+  AoA40_RD1_G_n2.2                (AoA=40, RD1, G=-2.20)
+  AoA40_RD12_G_n2.0               (AoA=40, RD12, G=-2.00)
+  AoA40_RD16_G_4.0                (AoA=40, RD16, G=4.00)
+  AoA40_RD19_G_0.8                (AoA=40, RD19, G=0.80)
+  AoA40_RD6_G_1.8                 (AoA=40, RD6, G=1.80)
+  AoA50_RD18_G_2.2                (AoA=50, RD18, G=2.20)
+  AoA50_RD21_G_n4.0               (AoA=50, RD21, G=-4.00)
+  AoA50_RD4_G_n3.0                (AoA=50, RD4, G=-3.00)
+  AoA50_RD7_G_0.4                 (AoA=50, RD7, G=0.40)
+  AoA50_RD8_G_n2.0                (AoA=50, RD8, G=-2.00)
+  AoA60_RD10_G_n0.4               (AoA=60, RD10, G=-0.40)
+  AoA60_RD24_G_n1.8               (AoA=60, RD24, G=-1.80)
+  AoA60_RD26_G_2.0                (AoA=60, RD26, G=2.00)
+  AoA60_RD6_G_n3.0                (AoA=60, RD6, G=-3.00)
+  AoA60_RD9_G_n3.0                (AoA=60, RD9, G=-3.00)
+
+Total test sequences: 1416
+Unique test cases: 24

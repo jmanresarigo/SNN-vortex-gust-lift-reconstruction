@@ -1,0 +1,20 @@
+{
+  "model_folder": "GustAE_v11_Nz16_July_18_2026_09h_34m",
+  "model_version": "v11",
+  "family": "snn",
+  "n_params": 58251,
+  "n_encounters": 24,
+  "t_total_steps": 142704,
+  "energy_total_pj": 3639942972979.2,
+  "energy_per_encounter_pj": 151664290540.80002,
+  "energy_per_step_pj": 25506944.255095866,
+  "total_mac": 5262923520.0,
+  "total_ac": 4017481694208.0,
+  "ops_total": 4022744617728.0,
+  "ops_per_encounter": 167614359072.0,
+  "ops_per_step": 28189431.394550957,
+  "mac_per_encounter": 219288480.0,
+  "ac_per_encounter": 167395070592.0,
+  "mac_per_step": 36880.0,
+  "ac_per_step": 28152551.394550957
+}

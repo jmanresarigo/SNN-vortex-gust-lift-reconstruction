@@ -1,0 +1,20 @@
+{
+  "model_folder": "CNN_ParamMatched_Nz16_seed0_July_22_2026_08h_41m",
+  "model_version": "cnn_param_matched",
+  "family": "cnn",
+  "n_params": 58097,
+  "n_encounters": 24,
+  "t_total_steps": 142704,
+  "energy_total_pj": 62638980095231.99,
+  "energy_per_encounter_pj": 2609957503967.9995,
+  "energy_per_step_pj": 438943407.99999994,
+  "total_mac": 13617169585920.0,
+  "total_ac": 0.0,
+  "ops_total": 13617169585920.0,
+  "ops_per_encounter": 567382066080.0,
+  "ops_per_step": 95422480.0,
+  "mac_per_encounter": 567382066080.0,
+  "ac_per_encounter": 0.0,
+  "mac_per_step": 95422480.0,
+  "ac_per_step": 0.0
+}

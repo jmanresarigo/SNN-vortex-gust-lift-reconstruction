@@ -1,0 +1,64 @@
+======================================================================
+EFFICIENCY METRICS SUMMARY
+======================================================================
+Model folder      : GustAE_v11_Nz16_July_18_2026_09h_34m
+Weights file      : epoch_100.pth
+Model family      : SNN (spiking)
+Model version     : v11
+Encoding          : rate  (in_channels=2)
+Latent dim N_z    : 16
+Dataset           : interpolated (N=4)
+Test encounters   : 24
+Total time steps  : 142,704  (sum of T_i over encounters)
+Device            : cuda
+Generated         : 2026-07-22 14:19:23
+----------------------------------------------------------------------
+These are analytical estimates of the arithmetic workload and its
+energy/memory footprint on the test set. Firing densities are measured
+empirically; MAC/AC counts follow the thesis formulas; the energy is a
+32-bit-op approximation (Horowitz 45 nm), not a hardware measurement.
+
+1. NUMBER OF PARAMETERS
+----------------------------------------------------------------------
+   Total parameters  N_theta : 58,251 (58.251 k)
+   Trainable                 : 58,251
+   Learnable neuron params   : 10 (LIF threshold + beta, one scalar each per layer)
+
+2. SPIKE ACTIVITY  (firing density rho_l = spikes / possible activations)
+----------------------------------------------------------------------
+   Encoded input                : 0.1016
+   b1_lif1                      : 0.2698
+   b1_lif2                      : 0.3625
+   b2_lif1                      : 0.3277
+   b2_lif2                      : 0.1883
+   flat_lif                     : 0.3632
+   mean over LIF layers         : 0.3023
+
+3. ARITHMETIC OPERATIONS  (MAC = continuous, AC = spike-driven)
+----------------------------------------------------------------------
+   Layer          type    op    rho_pre   dense MAC/step   ops (test-set)
+   b1_conv1       conv    AC     0.1016          8.294 M        120.294 G
+   b1_conv2       conv    AC     0.2698         66.355 M      2,555.220 G
+   b2_conv1       conv    AC     0.4784          8.294 M        566.301 G
+   b2_conv2       conv    AC     0.3277         16.589 M        775.667 G
+   z_proj         linear  MAC       -           36.864 k          5.261 G
+   cl_readout     linear  MAC       -                 16          2.283 M
+   ----------------------------------------------------------------
+   Total MAC : test-set 5.263 G  |  per encounter 219.288 M  |  per step 36.880 k
+   Total AC  : test-set 4,017.482 G  |  per encounter 167.395 G  |  per step 28.153 M
+   Dense-equiv MAC (all layers dense) : per encounter 592.041 G
+
+4. ESTIMATED INFERENCE ENERGY  (eps_MAC = 4.6 pJ, eps_AC = 0.9 pJ)
+----------------------------------------------------------------------
+   E_hat per encounter (mean) : 151.6643 mJ
+   E_hat per time step        : 25.5069 uJ
+   E_hat total (test set)     : 3.6399 J
+   Dense-equivalent E (per enc): 2.7234 J  (x17.96 of the spiking estimate)
+
+5. MEMORY
+----------------------------------------------------------------------
+   Weight memory  M_weights          : 227.543 KB  (58,251 params x 32-bit)
+   Temporal-state memory M_state,B=1  : 3.964 MB  (1,039,104 membrane values x 32-bit, 5 LIF layers)
+   Persistent memory M_persistent    : 4.186 MB
+
+======================================================================
