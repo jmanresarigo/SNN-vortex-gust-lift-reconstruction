@@ -1,5 +1,5 @@
 # ---------------------------------------------------------------------------
-# Virtual environment (huge — never commit)
+# Virtual environment
 # ---------------------------------------------------------------------------
 TFM_TESTING_venv/
 venv/
@@ -24,9 +24,7 @@ __pycache__/
 .ipynb_checkpoints/
 
 # ---------------------------------------------------------------------------
-# Datasets — NOT redistributed (see README "Dataset availability").
-# The two dataset folders ship as empty placeholders (kept by .gitkeep);
-# ignore any actual data files a user downloads/generates into them.
+# Datasets
 # ---------------------------------------------------------------------------
 datasets/Dataset_original/**
 datasets/Dataset_interpolated_*/**
@@ -34,6 +32,5 @@ datasets/Dataset_interpolated_*/**
 !datasets/Dataset_interpolated_*/
 !datasets/**/.gitkeep
 
-# Large, unused supplementary spreadsheet (33 MB, not read by any script).
-# Remove this line if you deliberately want to publish it.
+# Large, unused supplementary spreadsheet
 datasets/Source_Data.xlsx
