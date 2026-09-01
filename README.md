@@ -11,8 +11,6 @@ The present codebase focuses on a **Spiking Neural Network (SNN)** that reconstr
 
 This repository contains the full, reproducible pipeline behind the master thesis: dataset temporal interpolation, spike encoding, training, accuracy evaluations, energy-efficiency evaluations, and figure generation.
 
-**The complete thesis report is included in this repository as [`thesis_report.pdf`](thesis_report.pdf)**, refer to it for the full theoretical background, methodology, and results that this codebase implements.
-
 
 
 ---
@@ -128,7 +126,6 @@ SNN-vortex-gust-lift-reconstruction/
 │   └── Energy_matched_results/
 │
 ├── report_figures/             # Figures for the thesis report
-├── thesis_report.pdf           # The full thesis report
 ├── requirements.txt            # Dependencies to ensure compatibility with the code
 └── README.md
 ```
